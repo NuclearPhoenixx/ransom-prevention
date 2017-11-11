@@ -7,7 +7,7 @@ Thanks to Rahul Thakare @bantya for his simple yet neat little script on https:/
 
 A detailed video about how these files prevent an infection: https://www.youtube.com/watch?v=Y6WOpE92vKc
 
-** ATTENTION: This might not work in the future if the ransomware gets updated. Also this is NOT something to save you from an existing infection - prevention only. So please don't entirely rely on this script and of course be vary of everything you download.
+**ATTENTION: This might not work in the future if the ransomware gets updated. Also this is NOT something to save you from an existing infection - prevention only. So please don't entirely rely on this script and of course be vary of everything you download.**
 
 ---
 

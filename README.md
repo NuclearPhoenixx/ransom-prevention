@@ -11,10 +11,12 @@ A detailed video about how these files prevent an infection: https://www.youtube
 
 ---
 
+![image](https://phoenix1747.github.io/host/ransom.png)
+
 ## Changes: 
 * Use of %windir% instead of fixed drive letter (C:)
 * Use of SID S-1-5-32-544 instead of just "Administrators" to make it work on computers with other languages than English
-* Uninstaller
+* Added Uninstaller
 * Nice installer interface
 
 2017, Phoenix1747

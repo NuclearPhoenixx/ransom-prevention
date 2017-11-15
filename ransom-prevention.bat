@@ -22,7 +22,7 @@ net session>nul 2>&1
 Color 0F
 cls
 echo.
-echo Script to prevent an infection by BadRabbit or Petya/NotPetya. Version %v%, 2017.
+echo Script for BadRabbit and Petya/NotPetya prevention. Version %v%, 2017.
 echo Visit https://github.com/phoenix1747/ransom-prevention/ for updates.
 echo.
 echo.

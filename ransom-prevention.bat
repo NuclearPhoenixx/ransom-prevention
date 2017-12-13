@@ -1,11 +1,11 @@
 @echo off
 
-:: Inspired by bantya and hist gist at https://gist.github.com/bantya/f1796317490cbc8d1264565245488e97
+:: Inspired by bantya and his gist at https://gist.github.com/bantya/f1796317490cbc8d1264565245488e97
 :: Simple way to prevent an infection with Bad Rabbit or Petya/NotPetya
 
 TITLE Ransomware Prevention
 Color 0C
-SET v=1
+SET v=1.0.1
 
 net session>nul 2>&1
     if NOT %errorLevel% == 0 (
@@ -31,10 +31,10 @@ echo # prevented from installing on this computer.
 echo.
 echo.
 echo.
-echo # What do you want to do? You can (i)nstall or (u)ninstall the needed files.
-SET /P ANSWER=# Would you like to continue? (i/u): 
+echo # What do you want to do? You can (i)nstall or (r)emove the needed files.
+SET /P ANSWER=# Would you like to continue? (i/r): 
 if /i %ANSWER%==i goto INSTALL
-if /i %ANSWER%==u goto UNINSTALL
+if /i %ANSWER%==r goto REMOVE
 goto unrecog
 
 :INSTALL
@@ -53,19 +53,19 @@ icacls "%windir%\perfc" /inheritance:r /remove *S-1-5-32-544
 
 goto FINISHED
 
-:UNINSTALL
+:REMOVE
+:: BadRabbit
 icacls "%windir%\cscc.dat" /grant *S-1-5-32-544:F
 icacls "%windir%\infpub.dat" /grant *S-1-5-32-544:F
 del %windir%\cscc.dat
 del %windir%\infpub.dat
+:: Petya and NotPetya
 icacls "%windir%\perfc.dll" /grant *S-1-5-32-544:F
 icacls "%windir%\perfc.dat" /grant *S-1-5-32-544:F
 icacls "%windir%\perfc" /grant *S-1-5-32-544:F
 del %windir%\perfc.dll
 del %windir%\perfc.dat
 del %windir%\perfc
-
-goto FINISHED
 
 :FINISHED
 if errorlevel 1 goto error
@@ -93,7 +93,7 @@ exit
 cls
 COLOR 0C
 echo.
-echo ^>^> Bad usage. You have to use one of the available letters as command.
+echo ^>^> Bad usage. You have to use one of the available arguments.
 echo.
 echo Press any key to restart...
 pause>NUL

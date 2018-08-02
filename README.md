@@ -1,5 +1,5 @@
 # ransom-prevention
-![issues](https://img.shields.io/github/issues/Phoenix1747/ransom-prevention.svg?style=flat-square) ![open pr](https://img.shields.io/github/issues-pr-raw/phoenix1747/ransom-prevention.svg?style=flat-square) ![GitHub last commit](https://img.shields.io/github/last-commit/phoenix1747/ransom-prevention.svg?style=flat-square)
+![issues](https://img.shields.io/github/issues/Phoenix1747/ransom-prevention.svg?style=for-the-badge) ![open pr](https://img.shields.io/github/issues-pr-raw/phoenix1747/ransom-prevention.svg?style=for-the-badge) ![GitHub last commit](https://img.shields.io/github/last-commit/phoenix1747/ransom-prevention.svg?style=for-the-badge)
 
 This little script will create the files needed in order to prevent an infection with Bad Rabbit and Petya/NotPetya.
 In addition to the original Gist this script will work fine on PCs where Windows is not installed on the C: drive and on any non-English computer.
@@ -19,4 +19,6 @@ A detailed video about how these files prevent an infection with Bad Rabbit: htt
 
 **Note: This might not work anymore after a possible ransomware update. Also this is not something to save you from an existing infection - prevention only. So please don't entirely rely on this script!**
 
-2017, Phoenix1747.
+**Disclaimer: This is NO guarantee to save you from any kind of infection or similar. Thinking about your internet usage habits will be more of an investment than this.**
+
+2018, Phoenix1747.

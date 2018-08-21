@@ -20,5 +20,3 @@ A detailed video about how these files prevent an infection with Bad Rabbit: htt
 **Note: This might not work anymore after a possible ransomware update. Also this is not something to save you from an existing infection - prevention only. So please don't entirely rely on this script!**
 
 **Disclaimer: This is NO guarantee to save you from any kind of infection or similar. Thinking about your internet usage habits will be more of an investment than this.**
-
-2018, Phoenix1747.

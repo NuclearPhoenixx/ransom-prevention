@@ -10,7 +10,7 @@ Thanks to Rahul Thakare @bantya for his simple yet neat little script, at https:
 
 A detailed video about how these files prevent an infection with Bad Rabbit: https://www.youtube.com/watch?v=Y6WOpE92vKc
 
-![image](https://phoenix1747.github.io/host/ransom.png)
+![image](screenshots/ransom.png)
 
 ## What has been changed:
 * Use of %windir% instead of fixed path (C:\Windows\).
